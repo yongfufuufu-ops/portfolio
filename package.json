@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:pages": "BUILD_STATIC=true next build",
     "start": "next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix"

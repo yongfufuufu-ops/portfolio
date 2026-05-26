@@ -7,6 +7,7 @@ import { MDXContent } from "@content-collections/mdx/react";
 import { mdxComponents } from "@/mdx-components";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { toAbsoluteUrl } from "@/lib/site";
 
 function getSortedPosts() {
   return [...allPosts].sort((a, b) => {
@@ -52,11 +53,11 @@ export async function generateMetadata({
       description,
       type: "article",
       publishedTime,
-      url: `${DATA.url}/blog/${slug}`,
+      url: toAbsoluteUrl(`/blog/${slug}`),
       ...(image && {
         images: [
           {
-            url: `${DATA.url}${image}`,
+            url: toAbsoluteUrl(image),
           },
         ],
       }),
@@ -66,7 +67,7 @@ export async function generateMetadata({
       title,
       description,
       ...(image && {
-        images: [`${DATA.url}${image}`],
+        images: [toAbsoluteUrl(image)],
       }),
     },
   };
@@ -104,9 +105,9 @@ export default async function Blog({
     dateModified: post.publishedAt,
     description: post.summary,
     image: post.image
-      ? `${DATA.url}${post.image}`
-      : `${DATA.url}/blog/${slug}/opengraph-image`,
-    url: `${DATA.url}/blog/${slug}`,
+      ? toAbsoluteUrl(post.image)
+      : toAbsoluteUrl(`/blog/${slug}/opengraph-image`),
+    url: toAbsoluteUrl(`/blog/${slug}`),
     author: {
       "@type": "Person",
       name: DATA.name,

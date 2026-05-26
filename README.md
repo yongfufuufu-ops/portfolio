@@ -1,47 +1,50 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# Portfolio
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+这是一个基于 `Next.js` 的个人作品集站点，已经适配 `GitHub Pages` 静态部署。
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+## Features
 
-# Features
+- 主要信息集中在 [`src/data/resume.tsx`](./src/data/resume.tsx)
+- 支持博客与静态分页
+- 自动兼容两种 Pages 地址
+- `https://<username>.github.io/`
+- `https://<username>.github.io/<repo>/`
+- 已内置 GitHub Actions 自动部署工作流
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+## Local Development
 
-# Getting Started Locally
+```bash
+pnpm install
+pnpm dev
+```
 
-1. Clone this repository to your local machine:
+本地访问 `http://localhost:3000`。
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+## Deploy to GitHub Pages
 
-2. Move to the cloned directory
+1. 把仓库推到你自己的 GitHub 仓库。
+2. 保持默认分支为 `main`。
+3. 在 GitHub 仓库里打开 `Settings -> Pages`。
+4. 将 `Source` 设为 `GitHub Actions`。
+5. 推送到 `main` 后，工作流会自动构建并发布。
 
-   ```bash
-   cd portfolio
-   ```
+如果你的仓库名是 `<username>.github.io`，站点会发布到根路径。
 
-3. Install dependencies:
+如果你的仓库名是其他名字，例如 `portfolio`，站点会发布到 `https://<username>.github.io/portfolio/`。
 
-   ```bash
-   pnpm install
-   ```
+## Build for Pages Locally
 
-4. Start the local Server:
+```bash
+NEXT_PUBLIC_BASE_PATH=/portfolio NEXT_PUBLIC_SITE_URL=https://<username>.github.io pnpm run build:pages
+```
 
-   ```bash
-   pnpm dev
-   ```
+构建产物会输出到 `out/`。
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+## Notes
 
-# License
+- 模板里原本指向 Vercel 的说明已经移除，当前仓库以 GitHub Pages 为默认部署方式。
+- 如果你换了仓库名或绑定了自定义域名，只需要调整对应的环境变量即可。
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+## License
+
+Licensed under the [MIT license](./LICENSE).

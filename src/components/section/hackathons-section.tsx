@@ -5,9 +5,11 @@ import { DATA } from "@/data/resume";
 import { Timeline, TimelineItem, TimelineConnectItem } from "@/components/timeline";
 
 export default function HackathonsSection() {
+  const featuredHackathons = DATA.hackathons.slice(0, 3);
+
   return (
     <section id="hackathons" className="overflow-hidden">
-      <div className="flex min-h-0 flex-col gap-y-8 w-full">
+      <div className="mx-auto flex min-h-0 w-full max-w-[640px] flex-col gap-y-8">
         <div className="flex flex-col gap-y-4 items-center justify-center">
           <div className="flex items-center w-full">
             <div className="flex-1 h-px bg-linear-to-r from-transparent from-5% via-border via-95% to-transparent" />
@@ -17,17 +19,17 @@ export default function HackathonsSection() {
             <div className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent" />
           </div>
           <div className="flex flex-col gap-y-3 items-center justify-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">I like building things</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">我喜欢做东西</h2>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
-              During my time in university, I attended {DATA.hackathons.length}+
-              hackathons. People from around the country would come together and
-              build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals.
+              大学期间，我参加过 3
+              场 Hackathon。来自各地的人会聚在一起，用 2-3 天时间做出很酷的作品。看到一群充满热情、行动力十足的人，
+              把各种可能性真正变成现实，这件事非常开阔眼界。
             </p>
           </div>
         </div>
-        <Timeline>
-          {DATA.hackathons.map((hackathon) => (
-            <TimelineItem key={hackathon.title + hackathon.dates} className="w-full flex items-start justify-between gap-10">
+        <Timeline className="mx-auto w-full px-0">
+          {featuredHackathons.map((hackathon) => (
+            <TimelineItem key={hackathon.title + hackathon.dates} className="mx-auto flex w-full items-start gap-6 md:gap-10">
               <TimelineConnectItem className="flex items-start justify-center">
                 {hackathon.image ? (
                   <img
