@@ -42,16 +42,16 @@ const HACKATHONS: HackathonItem[] = [
   },
   {
     title: "Hack The North",
-    dates: "2018 年 9 月 14 日 - 16 日",
-    location: "加拿大 安大略省 滑铁卢",
+    dates: "",
+    location: "",
     description: "开发了一款移动应用，向全校学生实时推送大学校园活动信息。",
     image: hacklineImage("hack-the-north.png"),
     links: [],
   },
   {
     title: "FirstNet Public Safety Hackathon",
-    dates: "2018 年 3 月 23 日 - 24 日",
-    location: "美国 加利福尼亚州 旧金山",
+    dates: "",
+    location: "",
     description: "开发了一款移动应用，可将救护车内受害者的医疗数据传递给医院里的医生。",
     image: hacklineImage("firstnet.png"),
     links: [],
@@ -59,7 +59,7 @@ const HACKATHONS: HackathonItem[] = [
   {
     title: "DeveloperWeek Hackathon",
     dates: "2018 年 2 月 3 日 - 4 日",
-    location: "美国 加利福尼亚州 旧金山",
+    location: "",
     description: "开发了一款 Web 应用，聚合社交媒体上的加密货币相关数据并预测未来价格。",
     image: hacklineImage("developer-week.jpg"),
     links: [],
@@ -75,7 +75,7 @@ const HACKATHONS: HackathonItem[] = [
   {
     title: "ETH Waterloo",
     dates: "2017 年 10 月 13 日 - 15 日",
-    location: "加拿大 安大略省 滑铁卢",
+    location: "",
     description: "开发了一款区块链应用，让医生和药剂师能够进行无需信任的交易，并避免患者用药过量。",
     image: hacklineImage("eth-waterloo.png"),
     links: [],
@@ -83,7 +83,7 @@ const HACKATHONS: HackathonItem[] = [
   {
     title: "Hack The North",
     dates: "2017 年 9 月 15 日 - 17 日",
-    location: "加拿大 安大略省 滑铁卢",
+    location: "",
     description: "开发了一款虚拟现实应用，让用户能以第三人称视角看到自己。",
     image: hacklineImage("hack-the-north.png"),
     links: [],
@@ -147,7 +147,7 @@ const HACKATHONS: HackathonItem[] = [
   {
     title: "Waterloo Equithon",
     dates: "2017 年 5 月 5 日 - 7 日",
-    location: "加拿大 安大略省 滑铁卢",
+    location: "",
     description: "开发了 Pocketdoc：用户拍摄实体伤口照片后，应用会返回常见处理方案或疾病治疗建议。",
     image: hacklineImage("waterloo-equithon.png"),
     links: [],
@@ -155,7 +155,7 @@ const HACKATHONS: HackathonItem[] = [
   {
     title: "SpaceApps Waterloo",
     dates: "2017 年 4 月 28 日 - 30 日",
-    location: "加拿大 安大略省 滑铁卢",
+    location: "",
     description: "开发了 Earthwatch，一个 Web 应用，让飞机上的用户可以虚拟查看下方世界的重要兴趣点；他们甚至可以偏离既定航线飞出去，再按需飞回来。特别感谢 CesiumJS 提供开源的地球和飞机模型。",
     image: hacklineImage("space-apps.png"),
     links: [],
@@ -171,7 +171,7 @@ const HACKATHONS: HackathonItem[] = [
   {
     title: "StartHacks I",
     dates: "2017 年 3 月 4 日 - 5 日",
-    location: "加拿大 安大略省 滑铁卢",
+    location: "",
     description: "在 StartHacks 2017 开发了 Recipic：用户拍下家里现有的食材，应用会调用 ClarifAI 图像识别 API 识别食材，并返回可制作的菜谱。Recipic 在该 Hackathon 获得了最佳展示和最佳作品的一等奖。",
     image: hacklineImage("starthacks.png"),
     links: [],
@@ -187,7 +187,7 @@ const HACKATHONS: HackathonItem[] = [
   {
     title: "Terrible Hacks V",
     dates: "2016 年 11 月 26 日",
-    location: "加拿大 安大略省 滑铁卢",
+    location: "",
     description: "开发了一个 Windows 11 的恶搞版原型，带有一些有趣的通知和功能。",
     image: hacklineImage("terrible-hacks-v.png"),
     links: [],
@@ -211,7 +211,7 @@ export const DATA = {
   description:
     "AI 全栈工程师",
   summary:
-    "拥有 4 年以上后端研发经验，参与并交付过企业级管理系统、铁路货运数字化平台及工业识别相关系统建设，具备从需求分析、方案设计到核心功能开发、联调测试与上线支持的完整项目经验。熟悉 Java 技术体系，具备 Spring Boot、Spring Cloud、微服务架构、缓存、消息队列、异步流程编排及多系统集成等方面的工程实践能力，注重系统稳定性、可维护性与实际业务落地效果。同时具备 AI 应用工程化实践经验，持续围绕 OpenAI SDK、Agents SDK、LangGraph、MCP、RAG、工具调用、上下文管理等方向进行学习与原型验证，并在实际研发中结合 Codex、Cursor 等 AI 编程工具开展 Vibe Coding、代码理解、问题排查与方案整理，提升复杂项目的研发效率与交付质量。",
+    "具备 4 年以上全栈研发经验，长期聚焦 AI 应用工程化落地，能够独立完成从需求分析、方案设计到开发上线的端到端交付。熟悉 OpenAI SDK、LangGraph、MCP、RAG、Tool Calling 与长上下文管理，重点关注 Agent 架构、工作流编排，以及 AI 在真实业务中的稳定性和边界处理。前端使用 React、Next.js、TypeScript，后端以 Java / Spring 为主，同时具备 Python、PHP、Node.js 多语言开发能力，熟悉缓存、消息队列、异步流程与系统集成。参与过铁路货运数字化平台、工业多模态识别系统和企业级管理平台建设，也会结合 Claude Code、Codex 等 AI 工具提升开发和排障效率。",
   avatarUrl: withBasePath("/avatar-yongfu.jpg"),
   skills: [
     { name: "Java", icon: Java },
@@ -222,6 +222,7 @@ export const DATA = {
     { name: "TypeScript", icon: Typescript },
     { name: "Node.js", icon: Nodejs },
     { name: "Python", icon: Python },
+    { name: "PHP" },
     { name: "LangGraph" },
     { name: "OpenAI SDK", icon: Icons.openai },
     { name: "MCP" },

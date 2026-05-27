@@ -23,8 +23,8 @@ export default function ContactSection() {
           联系我
         </h2>
         <p className="mx-auto max-w-lg text-muted-foreground text-balance">
-          If you are looking for a backend engineer with experience in enterprise
-          systems and real-world delivery, feel free to reach out by email or phone.
+          If you are looking for an AI full stack engineer who can take ideas
+          from prototype to production, feel free to reach out by email or phone.
         </p>
         <div className="grid w-full max-w-xl gap-3 sm:grid-cols-3">
           <a

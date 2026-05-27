@@ -6,10 +6,16 @@ import {
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+const STATIC_EXPORT_FALLBACK_PAGE = "2";
+
 export async function generateStaticParams() {
   const totalPages = getTotalBlogPages();
 
-  return Array.from({ length: Math.max(totalPages - 1, 0) }, (_, index) => ({
+  if (totalPages < 2) {
+    return [{ page: STATIC_EXPORT_FALLBACK_PAGE }];
+  }
+
+  return Array.from({ length: totalPages - 1 }, (_, index) => ({
     page: String(index + 2),
   }));
 }
