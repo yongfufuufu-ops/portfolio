@@ -211,7 +211,7 @@ export const DATA = {
   description:
     "AI 全栈工程师",
   summary:
-    "具备 4 年以上全栈研发经验，长期聚焦 AI 应用工程化落地，能够独立完成从需求分析、方案设计到开发上线的端到端交付。熟悉 OpenAI SDK、LangGraph、MCP、RAG、Tool Calling 与长上下文管理，重点关注 Agent 架构、工作流编排，以及 AI 在真实业务中的稳定性和边界处理。前端使用 React、Next.js、TypeScript，后端以 Java / Spring 为主，同时具备 Python、PHP、Node.js 多语言开发能力，熟悉缓存、消息队列、异步流程与系统集成。参与过铁路货运数字化平台、工业多模态识别系统和企业级管理平台建设，也会结合 Claude Code、Codex 等 AI 工具提升开发和排障效率。",
+    "具备 4 年以上全栈研发经验，长期聚焦 AI 应用工程化落地，能够独立完成从需求分析、方案设计到开发上线的端到端交付。熟悉 OpenAI SDK、LangGraph、MCP、RAG、Tool Calling 与长上下文管理，重点关注 Agent 架构、工作流编排，以及 AI 在真实业务中的稳定性和边界处理。前端使用 React、Next.js、TypeScript，后端以 Java / Spring 为主，同时具备 Python、PHP、Node.js 多语言开发能力，熟悉缓存、消息队列、异步流程、系统集成与区块链/P2P 网络协议实验。参与过铁路货运数字化平台、工业多模态识别系统和企业级管理平台建设，也会结合 Claude Code、Codex 等 AI 工具提升开发和排障效率。",
   avatarUrl: withBasePath("/avatar-yongfu.jpg"),
   skills: [
     { name: "Java", icon: Java },
@@ -312,6 +312,30 @@ export const DATA = {
         "Mermaid",
         "PlantUML",
         "python-docx",
+      ],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Bitcoin Java 节点与 P2P 网络实验项目",
+      href: "https://github.com/tentechtop/bitcoin_java",
+      dates: "2025.12 - 2026.05",
+      description:
+        "基于 Java 21 + Spring Boot 构建比特币节点实验项目，围绕区块、交易、UTXO、TxPool、RBF 替换、挖矿与链同步等核心能力实现基础链路。设计 RocksDB 本地存储、地址/交易索引、区块浏览接口和静态监控页面，并实现基于 QUIC/P2P 的节点连接、DHT 路由、广播、黑名单、流控与拥塞控制等网络模块。",
+      technologies: [
+        "Java 21",
+        "Spring Boot",
+        "bitcoinj",
+        "RocksDB",
+        "Netty",
+        "QUIC",
+        "P2P",
+        "UTXO",
+        "RBF",
+        "Protobuf",
+        "CUDA",
+        "OpenCL",
       ],
       links: [],
       image: "",
