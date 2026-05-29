@@ -319,7 +319,7 @@ export const DATA = {
     },
     {
       title: "Bitcoin Java 节点与 P2P 网络实验项目",
-      href: "https://github.com/tentechtop/bitcoin_java",
+      href: "https://github.com/yongfufuufu-ops/bitcoin_java",
       dates: "2025.12 - 2026.05",
       description:
         "基于 Java 21 + Spring Boot 构建比特币节点实验项目，围绕区块、交易、UTXO、TxPool、RBF 替换、挖矿与链同步等核心能力实现基础链路。设计 RocksDB 本地存储、地址/交易索引、区块浏览接口和静态监控页面，并实现基于 QUIC/P2P 的节点连接、DHT 路由、广播、黑名单、流控与拥塞控制等网络模块。",
